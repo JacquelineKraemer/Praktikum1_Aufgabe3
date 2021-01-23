@@ -1,0 +1,32 @@
+// PAD1 - Praktikum 1
+// Aufgabe 3
+// 762199
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    int laenge, breite, hoehe, volumen, oberflaeche;
+    cout << "Berechnung eines Schuhkartons (Volumen, Oberfläche)" << endl;
+    cout << endl;
+    cout << "Geben Sie die Länge ein!" << endl;
+    cout << "Ihre Zahl: "; cin >> laenge;
+    cout << endl;
+    cout << "Geben Sie die Breite ein!" << endl;
+    cout << "Ihre Zahl: "; cin >> breite;
+    cout << endl;
+    cout << "Geben Sie die Höhe ein!" << endl;
+    cout << "Ihre Zahl: "; cin >> hoehe;
+    cout << endl;
+
+   // Formeln
+   volumen = laenge*hoehe*breite;
+   oberflaeche = 2*laenge*breite+2*breite*hoehe+2*laenge*hoehe;
+
+    // Bildschirmausgabe
+    cout << "Oberfläche: " << oberflaeche << "cm²" << endl;
+    cout << "Volumen: " << volumen << "cm³" << endl;
+
+    return 0;
+}
